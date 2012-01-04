@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title> WTForms Javascript Tests </title>
+  <script src="../wtforms/ext/javascript/wtforms.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="test.js"></script>
+  <style type="text/css">
+    body {
+      font-size: 1.1em;
+      font-family: sans-serif;
+    }
+
+    th, td { padding: 0.2em 1em; }
+    .fail, td.pass { font-weight: bold; text-align: center; }
+    .fail { color: #900; }
+    .pass { color: #090; }
+    #result { font-size: 18pt; }
+  </style>
+</head>
+<body>
+  <h1>WTForms Javascript Valiators Tests</h1>
+  <p id="result"></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Validator</th>
+        <th>Input</th>
+        <th>Passed?</th>
+    </thead>
+    <tbody id="results">
+
+    </tbody>
+  </table>
+  <form id="test-form">
+    <input type="hidden" id="test-input" value="" />
+    <input type="hidden" id="test-compare" value="foobar" />
+  </form>
+</body>
+</html>
